@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nexam Tools</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Nexam Tools logo" class="site-logo">
+            <div class="brand">
+                <div class="c-name">
+                    <span class="brand-fname">Nexam</span>
+                    <span class="brand-lname">Tools</span>
+                </div>
+                <span class="brand-tagline">Marching Towards</span>
+            </div>
+        </div>
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> <span>Home</span></a>
+            <a href="about.html"> <i class="fa-solid fa-circle-info"></i> <span>About</span></a>
+            <a href="products.html"> <i class="fa-solid fa-box"></i> <span>Products</span></a>
+            <a href="services.html"> <i class="fa-solid fa-gears"></i> <span>Services</span></a>
+            <a href="contact.html"> <i class="fa-solid fa-envelope"></i> <span>Contact</span></a>
+        </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()"><span>☰</span></div>
+    </header>
+
+    <!-- ===== TOP SLIDESHOW (FULL WIDTH) ===== -->
+    <section class="home-slide fade-in">
+        <div class="slideshow top-slideshow" onmouseenter="pauseSlide()" onmouseleave="resumeSlide()">
+
+            <img src="images/CNC Cutting Tools.png" class="slide active" data-caption="  ">
+            <img src="images/EM Ballnose.png" class="slide" data-caption="  ">
+            <img src="images/Resharpening Custom Endmills.png" class="slide" data-caption="   ">
+            <img src="images/Profile Tool.png" class="slide" data-caption="  ">
+
+            <div class="slide-caption" id="slideCaption"></div>
+
+            <button class="slide-btn prev" onclick="prevSlide()">❮</button>
+            <button class="slide-btn next" onclick="nextSlide()">❯</button>
+
+            <div class="slide-dots" id="slideDots"></div>
+        </div>
+    </section>
+
+    <main class="split-page">
+        <!-- WELCOME -->
+        <section class="welcome-card fade-in">
+            <h2>Welcome to <span class="accent-text">Nexam Tools</span></h2>
+
+            <p> <strong>Nexam Tools</strong>, established in 2015 at Coimbatore, is a specialist manufacturer of <strong>high-performance Solid Carbide Cutting Tools</strong>. </p>
+
+            <p> Founded by <strong>Mr. P. Arun Sakratees</strong>, a technocrat with over <strong>23 years of expertise</strong> in cutting tool design and manufacturing. </p>
+
+            <p> We manufacture <strong>standard and special carbide tools</strong>, delivering <strong>custom-designed solutions</strong> to meet demanding industrial applications. </p>
+
+            <a href="about.html" class="welcome-link"> More about us <i class="fa-solid fa-arrow-right"></i> </a>
+        </section>
+
+        <!-- HERO -->
+        <section class="hero-card fade-out">
+            <span class="hero-badge">Precision • Performance • Reliability</span>
+
+            <h1> One-stop Solution for<br> <span class="accent-text">Carbide Cutting Tools</span> </h1>
+
+            <p class="hero-intro">
+                Engineered for industries where <strong>micron-level accuracy</strong>, <strong>long tool life</strong>, and <strong>process reliability</strong> are critical.
+            </p>
+
+            <ul class="hero-points">
+                <li>✔ Solid carbide tools for milling, drilling & grinding</li>
+                <li>✔ Micro-diameter & special profile tools</li>
+                <li>✔ Custom-engineered solutions for complex jobs</li>
+                <li>✔ Improved surface finish & reduced machining cost</li>
+            </ul>
+
+            <div class="hero-actions">
+                <a class="btn" href="products.html">Explore Products</a>
+                <a class="download" href="NexamTools_Catalog.pdf" download>Download Brochure</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Visiting Address -->
+            <div class="footer-col">
+                <h3>Visiting Address</h3>
+                <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=66/2+Opp+Paari+Apartment+Venkatasamy+Nagar+Athipalayam+Road+Ganapathy+Coimbatore+641006"
+                        target="_blank" rel="noopener">      <i class="fa-solid fa-location-dot"></i>
+                        #66/2, Opp Paari Apartment,<br> Venkatasamy Nagar,<br>  Athipalayam Road,<br>  Ganapathy,<br>  Coimbatore – 641006
+                    </a>
+                </p>
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Contact Information  -->
+
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+
+                <p> <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:nexamtools.cbe@gmail.com">nexamtools.cbe@gmail.com</a>
+                </p>
+
+                <p> <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919597221457">+91 95972 21457</a>
+                </p>
+
+                <p>  <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919087289899">+91 90872 89899</a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom"> © 2025 Nexam Tools. All rights reserved.  </div>
+    </footer>
+
+    <div class="whatsapp-cta">
+        <a href="https://wa.me/919500121457?text=Hello%20Nexam%20Tools,%20I%20need%20a%20quick%20quotation"
+            class="whatsapp-float"
+            target="_blank"
+            aria-label="Quick Quotation Request on WhatsApp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

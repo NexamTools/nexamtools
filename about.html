@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nexam Tools</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Nexam Tools logo" class="site-logo">
+        <div class="brand">
+            <div class="c-name">
+              <span class="brand-fname">Nexam</span>
+              <span class="brand-lname">Tools</span>
+            </div>
+              <span class="brand-tagline">Marching Towards</span>
+        </div>
+    </div>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html"> <i class="fa-solid fa-house"></i> <span>Home</span></a>
+      <a href="about.html"> <i class="fa-solid fa-circle-info"></i> <span>About</span></a>
+      <a href="products.html"> <i class="fa-solid fa-box"></i> <span>Products</span></a>
+      <a href="services.html"> <i class="fa-solid fa-gears"></i> <span>Services</span></a>
+      <a href="contact.html"> <i class="fa-solid fa-envelope"></i> <span>Contact</span></a>
+    </nav>
+
+      <div class="menu-toggle" onclick="toggleMenu()"><span>☰</span></div>
+  </header>
+
+    <main class="split-page">
+        <!-- WELCOME -->
+      <section class="welcome-card fade-in">
+        <h2 class="accent-text">Who We Are</h2>
+          <p><strong>Nexam Tools</strong> is a trusted manufacturer of high-performance Solid Carbide Cutting Tools, established in 2015 at Coimbatore. We specialize in delivering precision-engineered tooling solutions for modern manufacturing industries. </p>
+
+          <p>Our expertise covers the production of standard carbide tools, special tools, and advanced tool design solutions, developed to meet diverse and demanding industrial applications..</p>
+            
+      </section>
+
+      <section class="about-card fade-out">
+        <div class="about-slideshow" onmouseenter="pauseSlide()" onmouseleave="resumeSlide()">
+
+          <img src="images/brazedcarbide.jpg" class="slide active"
+            data-caption="High Performance End Mills">
+          <img src="images/carbidetools.jpg" class="slide"
+            data-caption="Special Lugged Tools">
+          <img src="images/drills.jpg" class="slide"
+            data-caption="Precision Carbide Drills">
+          <img src="images/reamers.jpg" class="slide"
+            data-caption="Carbide Reamers for Accuracy">
+
+          <div class="slide-caption" id="slideCaption"></div>
+
+          <button class="slide-btn prev" onclick="prevSlide()">❮</button>
+          <button class="slide-btn next" onclick="nextSlide()">❯</button>
+
+          <div class="slide-dots" id="slideDots"></div>
+        </div>            
+      </section>
+ 
+    </main>
+
+    <main class="split-page">
+        
+      <section class="about-jump-img">
+        <div class="about-image">
+
+          <img src="images/specialcutters.png" class="jumping-image">
+          
+        </div>            
+      </section>
+
+      <section class="welcome-card fade-in" style="padding-top: 5px;">
+        <h2 class="accent-text">Our Story of Growth</h2>
+          <p><strong>Nexam Tools</strong> was founded in 2015 by <strong>Mr. Sakratees Pugazhenthi,</strong> a seasoned technocrat with over <strong>23 years of extensive experience in cutting tool design and manufacturing</strong>. His deep technical expertise and industry insight laid the foundation for building a company focused on innovation, quality, and customer-centric solutions. </p>
+
+          <p>Since inception, Nexam Tools has grown into a specialist manufacturer of high-performance standard and special carbide cutting tools, offering custom-designed solutions for demanding industrial applications across diverse sectors.</p>
+
+          <p>Our journey continues with a clear focus on <strong>technological advancement, quality excellence, and ethical growth</strong> enabling us to remain a dependable partner for precision tooling solutions.</p>
+            
+      </section>
+ 
+    </main>
+
+
+    <main class="container">
+
+      <section class="about-summary fade-in">
+
+        <div class="summary-card wide">
+          <i class="fa-solid fa-rocket"></i>
+          <h2>Mission</h2>
+          <p>To deliver reliable, cost-effective cutting tool solutions while continuously improving technology, quality, and customer satisfaction.  </p>
+        </div>
+
+        <div class="summary-card">
+          <i class="fa-solid fa-industry"></i>
+          <h2>Vision</h2>
+          <p>To be a trusted manufacturer of high-performance cutting tools through precision engineering, innovation, and uncompromising quality. </p>
+        </div>
+
+        <div class="summary-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h2>Values</h2>
+          <ul>
+            <li>Love and respect</li>
+            <li>Ethical behaviour</li>
+            <li>Earn trust</li>
+            <li>Make it simple</li>
+            <li>Challenge as an opportunity</li>
+            <li>Learn by doing</li>
+          </ul>
+        </div>
+
+      </section>
+    
+    </main>
+
+    <section class="why-us">
+      <h2>Why Choose Us?</h2>
+        <div class="about-features">
+          <div class="feature-card">10+ Years Experience</div>
+          <div class="feature-card">Advanced CNC Technology</div>
+          <div class="feature-card">Customized Solutions</div>
+          <div class="feature-card">Consistent Quality</div>
+          <div class="feature-card">Trusted Industrial Clients</div>
+          <div class="feature-card">Cost-Effective Regrinding</div>
+        </div>
+    </section>  
+    
+  
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Visiting Address -->
+            <div class="footer-col">
+                <h3>Visiting Address</h3>
+                <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=66/2+Opp+Paari+Apartment+Venkatasamy+Nagar+Athipalayam+Road+Ganapathy+Coimbatore+641006"
+                        target="_blank" rel="noopener">      <i class="fa-solid fa-location-dot"></i>
+                        #66/2, Opp Paari Apartment,<br> Venkatasamy Nagar,<br>  Athipalayam Road,<br>  Ganapathy,<br>  Coimbatore – 641006
+                    </a>
+                </p>
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Contact Information  -->
+
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+
+                <p> <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:nexamtools.cbe@gmail.com">nexamtools.cbe@gmail.com</a>
+                </p>
+
+                <p> <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919597221457">+91 95972 21457</a>
+                </p>
+
+                <p>  <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919087289899">+91 90872 89899</a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom"> © 2025 Nexam Tools. All rights reserved.  </div>
+    </footer>
+
+    <div class="whatsapp-cta">
+        <a href="https://wa.me/919500121457?text=Hello%20Nexam%20Tools,%20I%20need%20a%20quick%20quotation"
+            class="whatsapp-float"
+            target="_blank"
+            aria-label="Quick Quotation Request on WhatsApp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("open");
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

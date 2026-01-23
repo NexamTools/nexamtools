@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nexam Tools</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Nexam Tools logo" class="site-logo">
+            <div class="brand">
+                <div class="c-name">
+                    <span class="brand-fname">Nexam</span>
+                    <span class="brand-lname">Tools</span>
+                </div>
+                <span class="brand-tagline">Marching Towards</span>
+            </div>
+        </div>
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> <span>Home</span></a>
+            <a href="about.html"> <i class="fa-solid fa-circle-info"></i> <span>About</span></a>
+            <a href="products.html"> <i class="fa-solid fa-box"></i> <span>Products</span></a>
+            <a href="services.html"> <i class="fa-solid fa-gears"></i> <span>Services</span></a>
+            <a href="contact.html"> <i class="fa-solid fa-envelope"></i> <span>Contact</span></a>
+        </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()"><span>☰</span></div>
+    </header>
+
+<!-- ================= MAIN ================= -->
+<main class="container">
+  <!-- ===== CONTACT LAYOUT ===== -->
+  <section class="contact-layout fade-in">
+
+    <!-- ===== LEFT : ENQUIRY FORM ===== -->
+    <div class="contact-card card">
+      <h2>Enquiry Form</h2>
+      <form id="contactForm" class="contact-form" action="https://formsubmit.co/ajax/nexamtools.cbe@gmail.com" method="POST">
+
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_subject" value="New Enquiry - Nexam Tools">
+        <input type="hidden" name="_captcha" value="false">
+
+        <input class="input" type="text" name="name" placeholder="Enter Name" required>
+
+        <input class="input" type="text" name="company" placeholder="Enter Company Name" required>
+
+        <input class="input" type="email" name="email" placeholder="Enter E-mail" required>
+
+        <input class="input" type="text" name="mobile" placeholder="Enter Mobile No" required>
+
+        <textarea class="input" name="message" rows="6" placeholder="Message" required></textarea>
+
+        <input type="hidden" name="_captcha" value="true">
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- ✅ Google reCAPTCHA -->
+        <div class="g-recaptcha"  data-sitekey="6LdsNEksAAAAACX4_S9EXlBpW5dcZkdTmMIA-io6"></div>
+          <!-- </div> -->
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <!-- ✅ WhatsApp button -->
+        <a href="https://wa.me/919500121457" target="_blank" class="whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+            Chat on WhatsApp
+        </a>
+      </form>
+    </div>
+
+    <!-- ===== RIGHT : CONTACT DETAILS ===== -->
+    <div class="contact-card card">
+      <h2>Contact Details</h2>
+
+      <div class="contact-split">
+        <!-- LEFT : ADDRESS -->
+        <div class="contact-left">
+          <h3>Nexam Tools</h3>
+          <p>
+            66/2,2, Opp. Paari Apartment,<br>
+            Venkatasamy Nagar,<br>
+            Athipalayam Road,<br>
+            Ganapathy,<br>
+            Coimbatore – 641006
+          </p>
+        </div>
+
+        <!-- RIGHT : PHONE & EMAIL -->
+        <div class="contact-right">
+          <p> <i class="fa-solid fa-phone"></i> +91 9500121457 </p>
+          <p> <i class="fa-solid fa-phone"></i> +91 9087289899 </p>
+          <p> <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:nexamtools.cbe@gmail.com"> nexamtools.cbe@gmail.com </a>
+          </p>
+        </div>
+      </div>
+        <hr>
+
+      <!-- MAP -->
+      <h3>Locate Us</h3>
+      <div class="map-box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8829569181844!2d76.98378601475142!3d11.04740119213801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85938243a2b2f%3A0x51a1b9f7552f8364!2sNexam+tools!5e0!3m2!1sen!2sin!4v1552927790003"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Visiting Address -->
+            <div class="footer-col">
+                <h3>Visiting Address</h3>
+                <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=66/2+Opp+Paari+Apartment+Venkatasamy+Nagar+Athipalayam+Road+Ganapathy+Coimbatore+641006"
+                        target="_blank" rel="noopener">      <i class="fa-solid fa-location-dot"></i>
+                        #66/2, Opp Paari Apartment,<br> Venkatasamy Nagar,<br>  Athipalayam Road,<br>  Ganapathy,<br>  Coimbatore – 641006
+                    </a>
+                </p>
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Contact Information  -->
+
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+
+                <p> <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:nexamtools.cbe@gmail.com">nexamtools.cbe@gmail.com</a>
+                </p>
+
+                <p> <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919597221457">+91 95972 21457</a>
+                </p>
+
+                <p>  <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919087289899">+91 90872 89899</a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom"> © 2025 Nexam Tools. All rights reserved.  </div>
+    </footer>
+
+    <div class="whatsapp-cta">
+        <a href="https://wa.me/919500121457?text=Hello%20Nexam%20Tools,%20I%20need%20a%20quick%20quotation"
+            class="whatsapp-float"
+            target="_blank"
+            aria-label="Quick Quotation Request on WhatsApp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("open");
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

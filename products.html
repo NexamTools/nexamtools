@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nexam Tools</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Nexam Tools logo" class="site-logo">
+            <div class="brand">
+                <div class="c-name">
+                    <span class="brand-fname">Nexam</span>
+                    <span class="brand-lname">Tools</span>
+                </div>
+                <span class="brand-tagline">Marching Towards</span>
+            </div>
+        </div>
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> <span>Home</span></a>
+            <a href="about.html"> <i class="fa-solid fa-circle-info"></i> <span>About</span></a>
+            <a href="products.html"> <i class="fa-solid fa-box"></i> <span>Products</span></a>
+            <a href="services.html"> <i class="fa-solid fa-gears"></i> <span>Services</span></a>
+            <a href="contact.html"> <i class="fa-solid fa-envelope"></i> <span>Contact</span></a>
+        </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()"><span>☰</span></div>
+    </header>
+    
+    <main class="container">
+      <h1 class="page-title">Our Products</h1>
+      <section class="product-block">
+        <h2 class="tool-heading">
+          <a href="javascript:void(0);"
+            data-title="Solid Carbide End Mill"
+            data-desc="Precision ground solid carbide end mill for high-speed CNC machining."
+            data-specs="Applications: Slotting, Profiling, Pocketing | Materials: Steel, Alloy Steel, Cast Iron | Flutes: 2, 3, 4 | Coatings: TiAlN, AlCrN"
+            onclick="openTool(this)">    Solid Carbide End Mills
+          </a>
+        </h2>
+        <div class="tool-row">
+
+          <figure class="tool-card" onclick="openTool(this.closest('.product-block').querySelector('a'))">
+
+            <img src="images/Products/SC Endmill.jpg" alt="SC End Mill">
+            <figcaption>SC End Mill</figcaption>
+          </figure>
+
+          
+          <figure class="tool-card"
+            data-title="Ball Nose End Mill"
+            data-desc="Solid carbide ball nose end mill designed for 3D contouring and mold machining."
+            data-specs="Applications: 3D Profiling, Contouring | Materials: Hardened Steel, Tool Steel | Radius: Full Ball | Coatings: AlTiN"
+            onclick="openTool(this)">
+
+            <img src="images/Products/Ballnose.jpg" alt="Ballnose End Mill">
+            <figcaption>Ballnose Endmill</figcaption>
+          </figure>
+
+          
+          <figure class="tool-card">
+            <img src="images/Products/Roughing endmill.jpg" alt="Roughing Endmill">
+            <figcaption>Roughing Endmill</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/Products/Tappar endmill.jpg" alt="Tapper Endmill">
+            <figcaption>Tapper Endmill</figcaption>
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- DRILLS -->
+      <section class="product-block">
+        <h2>Carbide Drills</h2>
+
+        <div class="tool-row">
+
+          <figure class="tool-card">
+            <img src="images/Products/3 flute drill.png" alt="3 Flute Drill">
+            <figcaption>3 Flute Drill</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/Products/Throughcoolant_drill.jpg" alt="Through Coolant Drill">
+            <figcaption>Through Coolant</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/Products/Gun drill.jpg" alt="Gun Drill">
+            <figcaption>Gun  Drill</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/Products/StepDrill.jpg" alt="Step Drill">
+            <figcaption>Step Drill</figcaption>
+          </figure>
+
+        </div>
+
+      </section>
+
+      <!-- REAMERS & HOLE MILLS -->
+      <section class="product-block">
+        <h2>Reamers & Hole Mills</h2>
+        
+        <div class="tool-row">
+          
+          <figure class="tool-card">
+            <img src="images/Products/Solid reamer.jpg" alt="Straight Reamer">
+            <figcaption>Straight Reamer</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/Products/HelicalTaperReamer.jpg" alt="Helical Taper Reamer">
+            <figcaption>Helical Taper Reamer</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/Products/solid-carbide-holemill.jpg" alt="Hole Mill">
+            <figcaption>Hole Mill</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/Products/Throughcoolant_Reamer.jpg" alt="Throughcoolant_Reamer">
+            <figcaption>ThroughCoolant</figcaption>
+          </figure>
+        
+        </div>
+      
+      </section>
+      
+      <!-- CUSTOM TOOLS -->
+      <section class="product-block">
+        <h2>Customized Special Cutters</h2>
+        
+        <div class="tool-row">
+          
+          <figure class="tool-card">
+            <img src="images/custom1.jpg" alt="Profile Cutter">
+            <figcaption>Profile Cutter</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/custom2.jpg" alt="Step Cutter">
+            <figcaption>Step Cutter</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/custom3.jpg" alt="Form Tool">
+            <figcaption>Form Tool</figcaption>
+          </figure>
+          
+          <figure class="tool-card">
+            <img src="images/custom4.jpg" alt="Special Tool">
+            <figcaption>As per Drawing</figcaption>
+          </figure>
+        
+        </div>
+      </section>
+
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Visiting Address -->
+            <div class="footer-col">
+                <h3>Visiting Address</h3>
+                <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=66/2+Opp+Paari+Apartment+Venkatasamy+Nagar+Athipalayam+Road+Ganapathy+Coimbatore+641006"
+                        target="_blank" rel="noopener">      <i class="fa-solid fa-location-dot"></i>
+                        #66/2, Opp Paari Apartment,<br> Venkatasamy Nagar,<br>  Athipalayam Road,<br>  Ganapathy,<br>  Coimbatore – 641006
+                    </a>
+                </p>
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Contact Information  -->
+
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+
+                <p> <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:nexamtools.cbe@gmail.com">nexamtools.cbe@gmail.com</a>
+                </p>
+
+                <p> <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919597221457">+91 95972 21457</a>
+                </p>
+
+                <p>  <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919087289899">+91 90872 89899</a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom"> © 2025 Nexam Tools. All rights reserved.  </div>
+    </footer>
+
+    <div class="whatsapp-cta">
+        <a href="https://wa.me/919500121457?text=Hello%20Nexam%20Tools,%20I%20need%20a%20quick%20quotation"
+            class="whatsapp-float"
+            target="_blank"
+            aria-label="Quick Quotation Request on WhatsApp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+    <div id="toolModal" class="tool-modal">
+        <div class="tool-modal-content">
+
+          <span class="close" onclick="closeTool()">×</span>
+
+            <img id="toolImage" class="modal-img" alt="Tool Image">
+
+            <h3 id="toolTitle"></h3>
+            <p id="toolDesc"></p>
+
+            <ul id="toolSpecs"></ul>
+              <div class="tool-extra">
+                <p>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Available as per customer drawing
+                </p>
+                <p>
+                  <i class="fa-solid fa-ruler-combined"></i>
+                  Custom sizes on request
+                </p>
+              </div>
+
+              <a class="whatsapp-btn" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                Request Quote on WhatsApp
+              </a>
+
+        </div>
+    </div>
+
+
+  <script src="script.js"></script>
+  </body>
+</html>
