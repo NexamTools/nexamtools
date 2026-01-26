@@ -130,9 +130,9 @@ body {
 
 .split-page {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-
+  align-items: center;
   max-width: 1300px;      /* controls width */
   margin: 0 auto;         /* centers content */
   padding: 35px 20px;     /* left & right space */
@@ -149,6 +149,7 @@ body {
 .welcome-card{
     background: var(--card);
     padding: 40px 40px;
+    margin: auto;
     border-left: 4px solid var(--accent);
     border-radius: 20px;
     box-shadow: 0 30px 60px rgb(0,0,0,0.45);
@@ -820,8 +821,9 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .top-slideshow {
-    height: 300px;
+  .top-slideshow,
+  .about-slideshow {
+    aspect-ratio: 4 / 3;
   }
 }
 
@@ -849,6 +851,36 @@ body {
   .top-slideshow {
     height: 260px;
   }
+
+  .welcome-card {
+    padding: 40px 20px;
+  }
+
+  .about-jump {
+    flex-direction: column;
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .jumping-image {
+    max-width: 280px;
+    animation: none; /* Disable jump on mobile */
+  }
+
+  .about-summary {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .summary-card {
+    padding: 24px 22px;
+  }
+
+  .summary-card h2 {
+    font-size: 20px;
+  }
+
+
 }
 
 /* ===============================
@@ -860,9 +892,19 @@ body {
     margin-top: 40px;
   }
 
+  .top-slideshow,
+  .about-slideshow {
+    aspect-ratio: 1 / 1;
+  }
+
+  .about-features {
+    margin-top: 30px;
+  }
+
   .feature-card {
     flex: 1 1 100%;
-    padding: 16px 18px;
+    font-size: 14px;
+    padding: 14px 16px;;
   }
 
   .feature-card h3 {
@@ -1006,6 +1048,14 @@ body {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+}
+
+.services-details{
+  margin-top: 10px;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
 }
 
 /*=======HOVER/TOUCH TRIGGER=======*/
@@ -1343,6 +1393,22 @@ body {
   to { width: 80px; }
 }
 
+.know-more{
+  text-decoration: none;
+  color: var(--accent);
+  font-weight:100;
+  font-size: 12px;
+}
+
+.product-block a{
+  text-decoration: none;
+  color: var(--text);
+}
+
+.know-more:hover{
+  text-decoration: underline;
+}
+
 /* ====================== TOOL MODAL ===================== */
 
 .tool-modal{
@@ -1405,7 +1471,7 @@ body {
 
 .tool-extra p{
   margin: 6px 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -1419,7 +1485,7 @@ body {
 }
 
 .close:hover{
-  box-shadow: 0 12px 35px rgba(255, 152, 0, 0.4);
+  box-shadow: 0 35px 35px rgba(255, 152, 0, 0.4);
 }
 
 @keyframes fadeIn {
@@ -1430,7 +1496,7 @@ body {
 .tool-extra i {
   color: var(--accent);
   margin-right: 8px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .whatsapp-btn i {

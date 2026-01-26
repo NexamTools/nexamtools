@@ -205,14 +205,15 @@ function openTool(el) {
   const title = el.dataset.title;
   const desc = el.dataset.desc;
   const specs = el.dataset.specs.split("|");
+  const img = el.dataset.image;
 
   // Get image from the same product block
-  const section = el.closest(".product-block");
-  const img = section.querySelector(".tool-card img");
+  //const section = el.closest(".product-block");
+  //const img = section.querySelector(".tool-card img");
 
   document.getElementById("toolTitle").innerText = title;
   document.getElementById("toolDesc").innerText = desc;
-  document.getElementById("toolImage").src = img ? img.src : "";
+  document.getElementById("toolImage").src = img || "placeholder.jpg";
 
   document.getElementById("toolSpecs").innerHTML =
     specs.map(item => `<li>${item.trim()}</li>`).join("");
