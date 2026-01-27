@@ -34,29 +34,50 @@
         <div class="menu-toggle" onclick="toggleMenu()"><span>☰</span></div>
     </header>
 
-<!-- ================= MAIN ================= -->
-<main class="container">
-  <!-- ===== CONTACT LAYOUT ===== -->
-  <section class="contact-layout fade-in">
 
-    <!-- ===== LEFT : ENQUIRY FORM ===== -->
+<main class="serv-container">
+
+    <section class="services-hero">
+        <p><span class="joinus-accent">JOIN our team?</span> </p>
+        <p> </p>
+        <p> <span class="unlock-accent"><strong>Work and Unlock your True Potential.</strong> </span> </p>
+
+        <div class="cta-buttons">
+            <a class="btn primary" href="career.html">Apply Now</a>
+            <a class="download" href="About.html">Know more About Us</a>
+        </div>
+
+    </section>
+    
+    <section class="contact-layout fade-in">
+
+    <!-- ===== LEFT : Fill the Application ===== -->
     <div class="contact-card card">
-      <h2>Enquiry Form</h2>
-      <form id="contactForm" class="contact-form" action="https://formsubmit.co/ajax/nexamtools.cbe@gmail.com" method="POST">
+      <h2><span class="unlock-accent">SUBMIT THE APPLICATION</span></h2>
+      <form id="applicationForm" class="appln-form" action="https://formsubmit.co/ajax/nexamtools.cbe@gmail.com" method="POST" enctype="multipart/form-data">
 
         <!-- FormSubmit settings -->
-        <input type="hidden" name="_subject" value="New Enquiry - Nexam Tools">
+        <input type="hidden" name="_subject" value="JOB APPLICATION">
         <input type="hidden" name="_captcha" value="false">
 
-        <input class="input" type="text" name="name" placeholder="Enter Name" required>
-
-        <input class="input" type="text" name="company" placeholder="Enter Company Name" required>
+        <input class="input" type="text" name="name" placeholder="Enter Your Name" required>
 
         <input class="input" type="email" name="email" placeholder="Enter E-mail" required>
 
         <input class="input" type="text" name="mobile" placeholder="Enter Mobile No" required>
 
-        <textarea class="input" name="message" rows="6" placeholder="Message" required></textarea>
+        <textarea class="input" name="message" rows="6" placeholder="Introduction About Yourself" required></textarea>
+
+        <select class="input" type="text" name="position" required>
+            <option value="" disabled selected> Select the position you are applying for...</option>
+            <option value="accountant">Accountant</option>
+            <option value="marketing">Marketing</option>
+            <option value="operator">Machine Operator</option>
+            <option value="followup">Tool Follow-up</option>
+        </select>
+
+        <label for="resume" style="color: var(--text); display: block; margin-bottom: 0;">Upload Resume(PDF)</label>
+        <input class="input" type="file" id="resume" name="resume" accept=".pdf" required>
 
         <input type="hidden" name="_captcha" value="true">
         <input type="text" name="_honey" style="display:none">
@@ -65,60 +86,52 @@
         <div class="g-recaptcha"  data-sitekey="6LdsNEksAAAAACX4_S9EXlBpW5dcZkdTmMIA-io6"></div>
           <!-- </div> -->
 
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit" class="btn appln-btn">SUBMIT</button>
 
-        <!-- ✅ WhatsApp button -->
-        <a href="https://wa.me/919087289899" target="_blank" class="whatsapp-btn">
-          <i class="fa-brands fa-whatsapp"></i>
-            Chat on WhatsApp
-        </a>
+        
       </form>
     </div>
 
     <!-- ===== RIGHT : CONTACT DETAILS ===== -->
     <div class="contact-card card">
-      <h2>Contact Details</h2>
+      <h2><span class="life-accent">Life at Nexam Tools</span></h2>
 
       <div class="contact-split">
         <!-- LEFT : ADDRESS -->
-        <div class="contact-left">
-          <h3>Nexam Tools</h3>
-          <p>
-            66/2,2, Opp. Paari Apartment,<br>
-            Venkatasamy Nagar,<br>
-            Athipalayam Road,<br>
-            Ganapathy,<br>
-            Coimbatore – 641006
-          </p>
+        <div class="career-left">
+          <ul style="list-style-type: none;"> 
+            <li> <i class="fas fa-users"></i> Collaborative Environment</li>
+            <li> <i class="fas fa-tools"></i> Learn by Doing</li>
+            <li> <i class="fas fa-chart-line"></i> Career Growth</li>
+            <li> <i class="fas fa-clipboard-check"></i> Regular Feedback</li>
+            <li> <i class="fas fa-map-marker-alt"></i> Centrally Located Workspace</li>
+            <li> <i class="fas fa-utensils"></i>On-site Refreshments</li>
+          </ul>
         </div>
 
-        <!-- RIGHT : PHONE & EMAIL -->
-        <div class="contact-right">
-          <p> <i class="fa-solid fa-phone"></i> +91 422 4939288 </p>
-          <p> <i class="fa-solid fa-phone"></i> +91 9087289899 </p>
-          <p> <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:nexamtools.cbe@gmail.com"> nexamtools.cbe@gmail.com </a>
-          </p>
-        </div>
       </div>
         <hr>
 
       <!-- MAP -->
-      <h3>Locate Us</h3>
-      <div class="map-box">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8829569181844!2d76.98378601475142!3d11.04740119213801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85938243a2b2f%3A0x51a1b9f7552f8364!2sNexam+tools!5e0!3m2!1sen!2sin!4v1552927790003"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
+      <div class="slideshow-window">
+
+            <img src="images/machine1.jpg" class="m-slide">
+            <img src="images/machine2.jpg" class="m-slide">
+            <img src="images/machine3.jpg" class="m-slide">
+            <img src="images/machine4.jpg" class="m-slide">
+        
+        </div>
     </div>
   </section>
 
-</main>
 
+        <section class="services-hero">
+            <p> <span class="unlock-accent">We are here to help grow with us.</span> </p>
+            <h2>Are you Ready to <span class="accent-text">Join our Team?</span> </h2>
+            <div class="cta-buttons"><button class="btn primary">Apply now</button></div>
+        </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
+    <footer class="site-footer">
         <div class="footer-container">
 
             <!-- Visiting Address -->
@@ -179,13 +192,6 @@
         </a>
     </div>
 
-    <script>
-        function toggleMenu() {
-            document.getElementById("navMenu").classList.toggle("open");
-        }
-    </script>
-
     <script src="script.js"></script>
-
 </body>
 </html>
