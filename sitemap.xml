@@ -32,4 +32,9 @@
     <priority>0.70</priority>
   </url>
 
+  <url>
+    <loc>https://nexamtools.in/career.html</loc>
+    <priority>0.70</priority>
+  </url>
+
 </urlset>
